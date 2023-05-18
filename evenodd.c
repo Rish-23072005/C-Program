@@ -1,18 +1,25 @@
-#include<stdio.h>
-void find(int n);
-void main(){
+#include <stdio.h>
+
+int main()
+{
     int num;
-    printf("Enter a number:");
-    scanf("%d",&num);
-    find(num);
-}
-void find(int n) {
-     if(n%2==0)
-     printf("%d even\n",n);
-     else
-     printf("%d odd\n",n);
 
-    
+    /* Input a number from user */
+    printf("Enter any number to check even or odd: ");
+    scanf("%d", &num);
 
+    switch(num % 2)
+    {
+        
+        case 0: 
+            printf("Number is Even");
+            break;
 
+        
+        case 1: 
+            printf("Number is Odd");
+            break;
+    }
+
+    return 0;
 }
